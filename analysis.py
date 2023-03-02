@@ -20,6 +20,7 @@ def split_data(X,Y, train_size):
   data = np.concatenate((X, Y), 1)
   np.random.shuffle(data)
 
+  
   n_train = round(len(data)*train_size)
   n_test = len(data) - n_train
 
